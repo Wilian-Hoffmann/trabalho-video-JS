@@ -9,6 +9,8 @@
     <body class="container">
         <h1 class="text-center">Negociações</h1>
 
+        <div id="mensagemView"></div>
+
         <form class="form">
             <div class="form-group">
                 <label for="data">Data</label>
@@ -35,19 +37,25 @@
         <br />
         <br />
 
-        <table class="table table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th>DATA</th>
-                    <th>QUANTIDADE</th>
-                    <th>VALOR</th>
-                    <th>VOLUME</th>
-                </tr>
-            </thead>
+        <div id="negociacoes"></div>
 
-            <tbody></tbody>
+        <script src="app/domain/negociacao/Negociacao.js"></script>
+        <script src="app/controllers/NegociacaoControler.js"></script>
+        <script src="app/ui/converters/DateConverter.js"></script>
+        <script src="app/domain/negociacao/Negociacoes.js"></script>
+        <script src="app/ui/views/View.js"></script>
+        <script src="app/ui/views/Negociacoesview.js"></script>
+        <script src="app/ui/models/Mensagem.js"></script>
+        <script src="app/ui/views/MensagemView.js"></script>
+        <script src="app/util/ProxyFactory.js"></script>
+        <script src="app/util/Bind.js"></script>
+        <script src="app/util/ApplicationException.js"></script>
+        <script src="app/ui/converters/DataInvalidaException.js"></script>
+        <script src="app/domain/negociacao/NegociacaoService.js"></script>
 
-            <tfoot></tfoot>
-        </table>
+        <script src="app/app.js"></script>
+
     </body>
 </html>
+
+
